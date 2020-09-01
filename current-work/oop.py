@@ -12,5 +12,6 @@ stu2 = Students('Chris','Saun','chrisemail@email.com') # object of Students clas
 # print(stu1.lname,stu1.email,stu1.fname) # Print lname, email, fname stu1
 # print(stu2.fname) # print fname stu2
 
-stu1.print_fullname()
-stu2.print_fullname()
+stu1.print_fullname() # print fullname of stu1
+stu2.print_fullname() # print fullname of stu2
+Students.print_fullname(stu1) # Print fullname of stu1
