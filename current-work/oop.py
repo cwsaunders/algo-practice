@@ -1,11 +1,18 @@
 class Students:
+
+    num_of_students = 0
+
     def __init__(self,fname,lname,email):
-        self.fname = fname
-        self.lname = lname
-        self.email = email
+        self.fname = fname # firstname
+        self.lname = lname # lastname
+        self.email = email # email
+
+        Students.num_of_students += 1 # Increment # of students by 1 every initialization
     def print_fullname(self):
         print(self.fname + ' ' + self.lname)
-
+    
+class Teachers(Students):
+    pass
 
 stu1 = Students('Christian','Saunders','christiansemail@email.com') # object of Students class
 stu2 = Students('Chris','Saun','chrisemail@email.com') # object of Students class
@@ -15,3 +22,9 @@ stu2 = Students('Chris','Saun','chrisemail@email.com') # object of Students clas
 stu1.print_fullname() # print fullname of stu1
 stu2.print_fullname() # print fullname of stu2
 Students.print_fullname(stu1) # Print fullname of stu1
+
+print(Students.num_of_students) # Print # of Student objects
+
+# Access Students class via Teachers class
+stu3 = Teachers('teach', 'lname', 'teach1@email.net')
+Teachers.print_fullname(stu3) # print stu3 (aka teacher 1)
