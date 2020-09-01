@@ -26,5 +26,7 @@ Students.print_fullname(stu1) # Print fullname of stu1
 print(Students.num_of_students) # Print # of Student objects
 
 # Access Students class via Teachers class
-stu3 = Teachers('teach', 'lname', 'teach1@email.net')
+stu3 = Teachers('teach', 'lname', 'teach1@email.net') # teacher 1
 Teachers.print_fullname(stu3) # print stu3 (aka teacher 1)
+math = Teachers('Emma','Johnson','email@email.email') # teacher 2
+print(math.fname) # fullname
