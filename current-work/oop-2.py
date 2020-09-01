@@ -15,3 +15,14 @@ class Students(UniversityPeople):
 
 class Teachers(UniversityPeople):
     pass
+
+
+stu1 = Students('Christian','Saunders','christiansemail@email.com') # object of Students class
+stu2 = Students('Chris','Saun','chrisemail@email.com') # object of Students class
+
+math = Teachers('Emma','Johnson','email@email.email') # teacher
+
+
+print(stu1.fname)
+print(stu2.fname)
+print(math.fname)
