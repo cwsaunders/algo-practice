@@ -3,9 +3,14 @@ class Students:
         self.fname = fname
         self.lname = lname
         self.email = email
+    def print_fullname(self):
+        print(self.fname + ' ' + self.lname)
 
 
 stu1 = Students('Christian','Saunders','christiansemail@email.com') # object of Students class
 stu2 = Students('Chris','Saun','chrisemail@email.com') # object of Students class
-print(stu1.lname,stu1.email,stu1.fname) # Print lname, email, fname stu1
-print(stu2.fname) # print fname stu2
+# print(stu1.lname,stu1.email,stu1.fname) # Print lname, email, fname stu1
+# print(stu2.fname) # print fname stu2
+
+stu1.print_fullname()
+stu2.print_fullname()
