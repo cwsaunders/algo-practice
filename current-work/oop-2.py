@@ -31,4 +31,6 @@ print(math.salary) # salary
 
 print(isinstance(stu1,Students)) # is stu1 an instance of the class Students
 print(isinstance(stu1, Teachers)) # is stu1 an instance of the class Students
-print(isinstance(stu1,UniversityPeople)) # is stu1 an instance of the class UniversityPeople (it is a subclass)
+print(isinstance(stu1,UniversityPeople)) # is stu1 an instance of the class UniversityPeople (it is an object of subclass)
+
+print(isinstance(Students,UniversityPeople)) # Checks actual class, not object of class, if it is a subclass of another class
